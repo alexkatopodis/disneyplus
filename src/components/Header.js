@@ -1,6 +1,16 @@
 import styled from "styled-components";
+import { auth, provider } from "./firebase";
 
 const Header = (props) => {
+
+      const handleAuth = () => {
+          auth.signInWithPopup(provider).then((result) => {
+              console.log(result)
+          }).catch((error) => {
+              alert(error.message);
+          });
+      };
+
     return (
         <Nav>
             <Logo>
@@ -14,22 +24,22 @@ const Header = (props) => {
 
                 <a href = '/search'>
                     <img src = '/images/search-icon.svg' alt='SEARCH' />
-                    <span>SEARCH</span>
+                    <span>PROCURA</span>
                 </a>
 
                 <a href = '/watchlist'>
                     <img src = '/images/watchlist-icon.svg' alt='WATCHLIST' />
-                    <span>WATCHLIST</span>
+                    <span>ASSISTA</span>
                 </a>
 
                 <a href = '/originals'>
                     <img src = '/images/original-icon.svg' alt='ORIGINALS' />
-                    <span>ORIGINALS</span>
+                    <span>ORIGINAL</span>
                 </a>
 
                 <a href = '/movies'>
                     <img src = '/images/movie-icon.svg' alt='MOVIES' />
-                    <span>MOVIES</span>
+                    <span>FILMES</span>
                 </a>
 
                 <a href = '/series'>
@@ -37,7 +47,7 @@ const Header = (props) => {
                     <span>SERIES</span>
                 </a>                
             </NavMenu>
-            <Login>Login</Login>
+            <Login onClick={handleAuth}>Login</Login>
         </Nav>
     )
 };
