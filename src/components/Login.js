@@ -6,11 +6,11 @@ const Login = (props) => {
         <Content>
             <CTA>
                <CTALogoOne src='/images/cta-logo-one.svg' alt=''/>
-               <SignUp>GET ALL THERE</SignUp>
+               <SignUp>OBTENHA ACESSO JÁ</SignUp>
                <Description>
-                   Get Premier Acess to Raya and the Last Dragon for an additional fee 
-                   with a Disney+ subscription. As of 26/03/21, the price of Disney+ 
-                   and The Disney Bundle will increase by $1.
+                  Obtenha Acesso Premier a Raya e o Último Dragão por uma taxa adicional com 
+                  uma assinatura Disney +. A partir de 26/03/21, o preço do Disney + e do 
+                  Pacote Disney aumentará em $ 1.
                 </Description>
                 <CTALogoTwo src='/images/cta-logo-two.png' alt='' />
             </CTA>
