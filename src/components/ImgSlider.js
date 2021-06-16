@@ -40,7 +40,7 @@ const ImgSlider = (props) => {
                   <a>
                       <img src='/images/slider-scales.jpg' alt=''/>
                   </a>
-              </Wrap>
+              </Wrap>              
           </Carousel>
       
     )
